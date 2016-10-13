@@ -1,16 +1,16 @@
 @extends('admin.base.base')
 
 @section('content')
-			<div class="col-xs-12">
+<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 
-			<h4 class="header green clearfix">
-				Bootstrap Lightweight Editor
-			</h4>
+								<h4 class="header green clearfix">
+									Bootstrap Lightweight Editor
+								</h4>
 
-			<div class="wysiwyg-editor" id="editor1"></div>
+								<div class="wysiwyg-editor" id="editor1"></div>
 
-			<div class="hr hr-double dotted"></div>
+								<div class="hr hr-double dotted"></div>
 
 @endsection
 
@@ -220,5 +220,5 @@
 		<script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'>
 		</script>
 	</div>
-
+	
 @endsection

@@ -52,10 +52,10 @@
 	<div class="page-content">
 		<div class="page-header">
 			<h1>
-				车辆列表
+				jqGrid
 				<small>
 					<i class="icon-double-angle-right"></i>
-					车辆列表
+					Dynamic tables and grids using jqGrid plugin
 				</small>
 			</h1>
 		</div><!-- /.page-header -->
@@ -64,6 +64,14 @@
 			<div class="col-xs-12">
 				<!-- PAGE CONTENT BEGINS -->
 
+				<div class="alert alert-info">
+					<i class="icon-hand-right"></i>
+
+					Please note that demo server is not configured to save the changes, therefore you may get an error message.
+					<button class="close" data-dismiss="alert">
+						<i class="icon-remove"></i>
+					</button>
+				</div>
 
 				<table id="grid-table"></table>
 
@@ -81,6 +89,9 @@
 @endsection
 
 @section("myscript")
+		
+
+		
 		
 		<!-- page specific plugin scripts -->
 
@@ -171,7 +182,7 @@
 					},
 			
 					editurl: $path_base+"/dummy.html",//nothing is saved
-					caption: "列表",
+					caption: "jqGrid with inline editing",
 			
 			
 					autowidth: true

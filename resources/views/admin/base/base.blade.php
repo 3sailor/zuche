@@ -377,7 +377,7 @@
 						</li> -->
 
 						<li>
-							<a href="#" class="dropdown-toggle">
+							<a href="{{ URL('/user') }}" class="dropdown-toggle">
 								<i class="icon-user"></i>
 								<span class="menu-text"> 用户管理 </span>
 
@@ -491,35 +491,13 @@
 								</li>
 
 								<li>
-									<a href="#" class="dropdown-toggle">
+									<a href="{{ URL('/youhui') }}" class="dropdown-toggle">
 										<i class="icon-double-angle-right"></i>
 
 										活动页面
 										<b class="arrow icon-angle-down"></b>
 									</a>
 
-									<ul class="submenu">
-										<li>
-											<a href="#">
-												<i class="icon-leaf"></i>
-												添加活动页
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<i class="icon-leaf"></i>
-												删除活动页
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<i class="icon-leaf"></i>
-												活动状态
-											</a>
-										</li>
-									</ul>
 								</li>
 
 								<li>
@@ -556,7 +534,7 @@
 								</li>
 
 								<li>
-									<a href="{{ URL('/admin/part/changzu') }}" class="dropdown-toggle">
+									<a href="#" class="dropdown-toggle">
 										<i class="icon-double-angle-right"></i>
 
 										长租
@@ -565,7 +543,7 @@
 
 									<ul class="submenu">
 										<li>
-											<a href="{{ URL('/admin/changzu') }}">
+											<a href="#">
 												<i class="icon-leaf"></i>
 												长租服务内容
 											</a>
