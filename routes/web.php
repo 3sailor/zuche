@@ -27,20 +27,14 @@ Route::get('/zuche', function(){
 	return view('zuche');
 });
 
-//前台顺风车页
-Route::get('/easyride', function(){
-	return view('easyride');
-});
+
 
 //前台个人中心页
 Route::get('/myzuche', function(){
 	return view('myzuche');
 });
 
-//前台专车页
-Route::get('/zhuanche', function(){
-	return view('zhuanche');
-});
+
 
 //前台企业租车页
 Route::get('/carbusiness', function(){
@@ -57,10 +51,7 @@ Route::get('/login', function(){
 	return view('login');
 });
 
-//前台长租页
-Route::get('/changzu', function(){
-	return view('changzu');
-});
+
 
 //前台到店取还页
 Route::get('/order2', function(){
@@ -81,6 +72,7 @@ Route::get('/admin', function () {
 Route::get('/youhui', function () {
 	return view('admin.part.youhui');
 });
+
 //后台登录页
 Route::get('/login', function () {
 	return view('admin.login.login');
@@ -95,6 +87,9 @@ Route::get('/user', function () {
 Route::get('/jq', function () {
 	return view('admin.user.jq');
 });
+
+
+
 //后台页面，不登录可直接进入的页面
 //LoginController	login dologin logout captcha
 //登录表单
@@ -107,6 +102,7 @@ Route::get('admin/captcha/{tmp}','Admin\LoginController@captcha');
 
 //后台页面，需要登录才能访问的页面
 Route::group(["prefix"=>"admin","middleware"=>"myauth"], function () {
+	
 	Route::get("index","Admin\IndexController@index");	//网站后台首页
 
 	Route::get("logout","Admin\LoginController@logout"); //执行退出
@@ -117,4 +113,25 @@ Route::get('admin/edit',function(){
 	return view('admin.part.edit');
 });
 
+/**
+ * 	长租路由 勿动
+ */
+/* Route::get('/admin/changzu', function () {
+	return view('admin.part.changzu');
+}); */
+Route::get("admin/changzu","Admin\ChangzuController@index");
 
+//前台长租页
+Route::get('/changzu', function(){
+	return view('changzu');
+});
+
+//前台专车页
+Route::get('/zhuanche', function(){
+	return view('zhuanche');
+});
+
+//前台顺风车页
+Route::get('/easyride', function(){
+	return view('easyride');
+});

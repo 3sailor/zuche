@@ -6,17 +6,16 @@
 <meta name="description" content="神州租车长期租车预订频道提供大量长期租车车型、价格,长期租车就上神州租车,108款车型超低价格等你来选. 新客户首日0租金!!!Tel:400-616-6666">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="WT.cg_n" content="长租服务"><link rel="stylesheet" type="text/css" href="css/global.css">
-<link rel="stylesheet" type="text/css" href="css/long_rent.css">
-<link rel="stylesheet" type="text/css" href="css/cityport_blue.css">
-<link type="text/css" rel="stylesheet" href="css/bdsstyle.css"></head>
-
-<body>
+<meta name="WT.cg_n" content="长租服务"><link rel="stylesheet" type="text/css" href="{{ asset('css/global.css')}}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/long_rent.css')}}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/cityport_blue.css')}}">
+<link type="text/css" rel="stylesheet" href="{{ asset('css/bdsstyle.css')}}"></head>
+<body><iframe style="display: none;" frameborder="0"></iframe>
 <!-- header start -->
-<link rel="stylesheet" type="text/css" href="css/global.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/global.css') }}">
 <input id="mebId" value="" type="hidden">
 <script type="text/javascript">
-	var carwrmURL='http://static.zuchecdn.com';
+	var carwrmURL='http://static.zuchecdn.com';	
 	var carwrmjsURL = 'http://js.zuchecdn.com';
 	var carwrmimageURL = 'http://image.zuchecdn.com';
 	var carwrmcssURL = 'http://css.zuchecdn.com';
@@ -35,26 +34,144 @@
 	var carbusinessURL='http://carbusiness.zuche.com';
 	var driverURL='http://cd.zuche.com';
 	var carwsztoneURL="http://carbusiness.zuche.com";
-</script><script type="text/javascript" src="js/sea.js"></script>
-<script type="text/javascript" src="js/seajs-preload.js"></script>
-<script type="text/javascript" src="js/seaconfig.js"></script><script type="text/javascript">
+</script><script type="text/javascript" src="{{ asset('js/sea.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/seajs-preload.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/seaconfig.js') }}"></script><script type="text/javascript">
 	seajs.use(['jspath/common/header']); //引入js
 </script>
-
 <form action="https://passport.zuche.com/memberManage/xtoploginMember.do" id="loginTopForm" target="_parent" method="post">
 	<input id="act" name="act" value="loginSys" type="hidden">
 	<input id="historyLocation" name="historyLocation" type="hidden">
 </form>
-@include("yemei")
-
+<div class="sz_hd_cont">
+	<div class="sz_hd">
+		<div class="sz_login fl" id="notLogin">
+		欢迎光临神州租车，请<a href="javascript:;" class="orange" id="loginBT"> 登录 </a>或<a href="https://passport.zuche.com/memberManage/xtoploginMember.do?act=registerSys" class="orange"> 注册 </a></div>
+		<div class="sz_login fl" id="alreadyLogin" style="display: none;"><font id="topLoginName">神州租车欢迎您，</font><a href="https://passport.zuche.com/memberManage/xtoploginMember.do?act=delsession" class="blue8e"> 退出</a></div>
+		<div class="sz-szbtsbox" id="szbTipDiv" style="display: none;"><div class="sz-szbts"><span class="dsj"></span>登录后，即享神州币返利！ <a href="#" class="close">&nbsp;</a></div></div>
+		<div class="fl sz-hd-phone" onmouseover="document.getElementById('phoneszlist').style.display='block'" onmouseout="document.getElementById('phoneszlist').style.display='none'">
+			<a class="bdnone">|&nbsp;<span class="mobile">&nbsp;</span>手机版 <span class="contmyszdown">&nbsp;</span></a>
+			<div id="phoneszlist" class="phoneszlist d_none">
+				<dl>
+					<dt onclick="window.open('http://shouji.zuche.com');">&nbsp;|&nbsp;<span class="mobile-bs">&nbsp;</span>手机版 <span class="contmyszup">&nbsp;</span></dt>
+					<dd>
+						<a href="javascript:;" class="bold">扫描二维码下载</a>
+						<a href="http://shouji.zuche.com/" class="bold" target="_blank">神州租车手机版</a>
+						<a href="https://itunes.apple.com/cn/app/id454685734?mt=8" target="_blank" class="indexiosxz">iPhone版下载</a>
+						<a href="http://static.zuchecdn.com/download/SZZC.apk" target="_blank" class="indexandroidxz">Android版下载</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="fl sz_hldz">中国汽车租赁行业领导者</div>
+		<div class="clear">&nbsp;</div>
+		<div class="sz_toolkit">
+			<ul>
+				<li class="contmysz" onmouseover="document.getElementById('contmyszlist').style.display='block'" onmouseout="document.getElementById('contmyszlist').style.display='none'">
+					<a href="http://mycar.zuche.com/queryOrder/queryOrder.do" class="bdnone">我的神州 <span class="contmyszdown">&nbsp;</span></a>
+					<div id="contmyszlist" class="contmyszlist d_none">
+						<dl>
+							<dt>我的神州 <span class="contmyszup">&nbsp;</span></dt>
+							<dd><a href="http://mycar.zuche.com/queryOrder/queryOrder.do" class="bhpr reddot">我的订单</a>
+                            </dd><dd><a href="http://mycar.zuche.com/myAssetsController/myAsset.do">我的资产</a></dd>
+                            <dd><a href="http://mycar.zuche.com/member/person/personinfo.do">我的账户</a></dd>
+                    </dl>
+					</div>
+				</li>
+				<li><a target="_blank" href="http://help.zuche.com/sitemap/">网站导航</a></li>
+				<li><a target="_blank" href="http://help.zuche.com/">帮助中心</a></li>
+				<li><a target="_blank" href="http://en.zuche.com/" class="pr0">English</a></li>
+				<li class="telDown">
+				<div class="phone fl" style="cursor:pointer">&nbsp;</div>
+				<sapn style="display:inline-block;width:20px;height:29px;background:url(http://image.zuchecdn.com/newversion/common/telDown.png) no-repeat center;cursor:pointer;"></sapn>
+				<img alt="" src="img/telother.png" style="display:none;position:absolute;right:0;top:30px;">
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--nav-->
+<div class="sz_nav">
+	<div class="base_nav">
+		<div class="index_logo" onclick="location='http://www.zuche.com' "></div>
+		<div class="sz_menu">
+			<ul>
+				<li>
+					<a id="top_monitor_index" target="_parent" href="http://www.zuche.com/">
+						首页
+					</a>
+				</li>
+				<li>
+					<a id="top_monitor_short" target="_parent" href="http://order.zuche.com/smfw/index.do?flag=1">
+						上门取送
+					</a>
+				</li>
+				<li>
+					<a id="top_monitor_short" target="_parent" href="http://order.zuche.com/smfw/index.do?flag=2">
+						到店取还
+					</a>
+				</li>
+				<li>
+					<div class="sznew_new"> </div>
+					<a id="top_monitor_driver" target="_parent" href="http://zhuanche.zuche.com/">
+						神州专车
+					</a>
+				</li>
+				<li class="cur">
+					<a id="top_monitor_long" target="_parent" href="http://changzu.zuche.com/">
+						长租服务
+					</a>
+				</li>
+				<li>
+					<a id="top_monitor_enterprise" target="_parent" href="http://carbusiness.zuche.com/"> 
+						企业租车
+					</a>
+				</li>
+				<li>
+					<a id="top_monitor_convenience" target="_parent" href="http://easyride.zuche.com/">
+						顺风车站
+					</a>
+				</li>
+				<li class="none980">
+					<a id="top_monitor_store" target="_parent" href="http://service.zuche.com/">
+						门店查询
+					</a>
+				</li>
+				<li class="none980">
+					<a id="top_monitor_usedCar" target="_blank" href="http://huodong.zuche.com/">
+						特惠活动
+					</a>
+				</li>
+				<li class="none980">
+					<a id="top_monitor_internationalCar" href="http://international.zuche.com/">
+						国际租车
+					</a>
+				</li>
+				<li class="morecur">
+					<a href="#">更多<span class="index_moreup">&nbsp;</span></a>
+					<div class="sz_more_menu">
+						<dl class="clearfix">
+							<dd class="sz_m_m_l">&nbsp;</dd>
+							<dd class="sz_m_m_b" style="padding:0px;"><a target="_parent" href="http://service.zuche.com/">门店查询</a></dd>
+							<dd class="sz_m_m_b"><a target="_blank" href="http://huodong.zuche.com/">特惠活动</a></dd>
+							<dd class="sz_m_m_b"><a href="http://international.zuche.com/">国际租车</a></dd>
+							<dd class="sz_m_m_r">&nbsp;</dd>
+						</dl>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><!-- header end -->
+<!-- banner start -->
 <div class="sz_banner_box">
-
 	<div class="sz_banner" style="position:static;">
 			<div class="indexShowBox">
 					<div style="background-image:url(http://image.zuchecdn.com/newversion/banner/sz_banner3.jpg?v=201506231600);" class="img">&nbsp;</div>
 			</div>
 		</div>
 </div>
+<!-- banner end -->
 
 <div class="w1190" style="*+z-index: 999;">	
     <!-- 搜索 start -->
@@ -103,7 +220,6 @@
             <div class="ac fl"><a href="javascript:void(0);" class="btn_bluewauto f18h1 bold white btnApply" id="checkVehicleInfo" style="height: 35px;line-height: 35px;">去 申 请</a></div>
         </div>
     </div>
-
     <!-- 搜索 end -->
     <div class="clearfix p20_0">
     <!-- 左侧 start -->
@@ -111,64 +227,17 @@
     	<div class="orderBoxBlue">
         	<h3 class="font_normal borderBlueB advtit pl20"><a class="fr f16 blue" style="padding-right:20px;" target="_blank" href="http://changzu.zuche.com/insurance.html">长租标准产品保险服务说明</a>推荐车型</h3>
             <ul class="sales">
-                <li class="fl">
-                    <span class="salesTit">2013款 别克凯越 1.5L 自动 经典型</span>
-                </li>
+            	@foreach($car as $ca)
+            	@if($ca->id % 2 == 0)
                 <li>
-                    <span class="salesTit">2013款 别克凯越 1.5L 自动 经典型</span>
+                    <span class="salesTit">{{ $ca->content }}</span>
                 </li>
+                @else
                 <li class="fl">
-                    <span class="salesTit">2013款 别克凯越 1.5L 自动 经典型</span>
+                    <span class="salesTit">{{ $ca->content }}</span>
                 </li>
-                <li>
-                    <span class="salesTit">2013款 别克GL8 2.4L 自动 CT豪华商务舒适版</span>
-                </li>
-                <li class="fl">
-                    <span class="salesTit">2013款 别克GL8 2.4L 自动 经典版</span>
-                </li>
-                <li>
-                    <span class="salesTit fl">2013款 别克GL8 2.4L 自动 LT豪华商务行政版</span>
-                    <span class="salesTit">2013款 别克GL8 3.0L 自动 GT豪华商务豪雅版</span>
-                </li>
-                <li class="fl">
-                    <span class="salesTit">2013款 别克GL8 3.0L 自动 XT豪华商务旗舰版</span>
-                </li>
-                <li>
-                    <!-- <span class="fr"><font class="fontOrange bold f14">&yen;12800</font>/月起</span> -->
-                    <span class="salesTit">2014款 奥迪A6L TFSI CVT(2.0TFSI CVT)标准型</span>
-                </li>
-                <li class="fl">
-                    <!-- <span class="fr"><font class="fontOrange bold f14">&yen;7900</font>/月起</span> -->
-                    <span class="salesTit">2013款 大众帕萨特 1.8TSI 自动 尊荣版</span>
-                </li>
-                <li>
-                    <!-- <span class="fr"><font class="fontOrange bold f14">&yen;10800</font>/月起</span> -->
-                    <span class="salesTit">2014款 宝马320Li 2.0T 自动 时尚型</span>
-                </li>
-                <li class="fl">
-                    <!-- <span class="fr"><font class="fontOrange bold f14">&yen;13000</font>/月起</span> -->
-                    <span class="salesTit">2014款 宝马520Li 2.0T 自动 典雅型 </span>
-                </li>
-                <li>
-                    <!-- <span class="fr"><font class="fontOrange bold f14">&yen;6200</font>/月起</span> -->
-                    <span class="salesTit">2013款 丰田凯美瑞 200E 自动 经典精英版 </span>
-                </li>
-                <li class="fl">
-                    <!-- <span class="fr"><font class="fontOrange bold f14">&yen;6500</font>/月起</span> -->
-                    <span class="salesTit">2013款 现代ix35 2.0GL 2WD 自动 舒适版</span>
-                </li>
-                <li>
-                    <!-- <span class="fr"><font class="fontOrange bold f14">&yen;6000</font>/月起</span> -->
-                    <span class="salesTit">2013款 现代索纳塔8代 2.0 自动 GS 时尚版 </span>
-                </li>
-                <li class="fl" style="border-bottom:none">
-                    <!-- <span class="fr"><font class="fontOrange bold f14">&yen;3380</font>/月起</span> -->
-                    <span class="salesTit">2011款 起亚K2 1.4GL 自动 </span>
-                </li>
-                <li style="border-bottom:none">
-                    <!-- <span class="fr"><font class="fontOrange bold f14">&yen;6200</font>/月起</span> -->
-                    <span class="salesTit">2013款 起亚狮跑 2.0GL 自动 两驱版</span>
-                </li>
+                @endif
+                @endforeach
             </ul>
         </div>
     </div>
@@ -178,9 +247,9 @@
     	<div class="orderBoxBlue">
 	    	<h3 class="font_normal borderBlueB advtit pl20">服务优势</h3>
 	        <ul class="serAdv f16">
-	        	<li class="borderBlueBda"><b>价格更低</b><br>网上直销，即刻报价，快捷透明。</li>
-	            <li class="borderBlueBda"><b>租期更灵活</b><br>3 个月以上，尽享长租优惠。</li>
-	            <li><b>服务更优</b><br>专业化团队，强大系统支持，<br>全国化网络，24小时服务。</li>
+	        @foreach($list as $adv)
+	            <li class="borderBlueBda"><b>{{ $adv->title }}</b><br>{{ $adv->content }}</li>
+	        @endforeach
 	        </ul> 
         </div>  
         <!-- 
@@ -218,7 +287,7 @@
  <script type="text/javascript">
 	seajs.use(['jspath/dcs_tag_zc.js']);
 </script>
-<script type="text/javascript" src="js/bdshare.js"></script><script src="js/bds_s_v2.js" type="text/javascript" id="bdshare_js" data="type=slide&amp;img=0&amp;pos=right&amp;uid=0"></script><!--页脚 end-->
+<!--页脚 end-->
 
 <!-- jQuery 遮罩层 -->  
 <div id="dialog" class="popup_block" mask-data="#?w=517">  	
@@ -280,4 +349,4 @@
 </script>
 
 
-<script src="js/logger.js"></script></body></html>
+<script src="{{ asset('js/logger.js')}}"></script></body></html>

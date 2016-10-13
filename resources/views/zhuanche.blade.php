@@ -43,10 +43,121 @@
 	<input id="act" name="act" value="loginSys" type="hidden">
 	<input id="historyLocation" name="historyLocation" type="hidden">
 </form>
-
+<div class="sz_hd_cont">
+	<div class="sz_hd">
+		<div class="sz_login fl" id="notLogin">
+		欢迎光临神州租车，请<a href="javascript:void(0);" class="orange" id="loginBT"> 登录 </a>或<a href="https://passport.zuche.com/memberManage/xtoploginMember.do?act=registerSys" class="orange"> 注册 </a></div>
+		<div class="sz_login fl" id="alreadyLogin" style="display: none;"><font id="topLoginName">神州租车欢迎您，</font><a href="https://passport.zuche.com/memberManage/xtoploginMember.do?act=delsession" class="blue8e"> 退出</a></div>
+		<div class="sz-szbtsbox" id="szbTipDiv" style="display: none;"><div class="sz-szbts"><span class="dsj"></span>登录后，即享积分返利！ <a href="#" class="close">&nbsp;</a></div></div>
+		<div class="fl sz-hd-phone" onmouseover="document.getElementById('phoneszlist').style.display='block'" onmouseout="document.getElementById('phoneszlist').style.display='none'">
+			<a class="bdnone">|&nbsp;<span class="mobile">&nbsp;</span>手机版 <span class="contmyszdown">&nbsp;</span></a>
+			<div id="phoneszlist" class="phoneszlist d_none">
+				<dl>
+					<dt onclick="window.open('http://shouji.zuche.com');">&nbsp;|&nbsp;<span class="mobile-bs">&nbsp;</span>手机版 <span class="contmyszup">&nbsp;</span></dt>
+					<dd>
+						<a href="javascript:;" class="bold">扫描二维码下载</a>
+						<a href="http://shouji.zuche.com/" class="bold" target="_blank">神州租车手机版</a>
+						<a href="https://itunes.apple.com/cn/app/id454685734?mt=8" target="_blank" class="indexiosxz">iPhone版下载</a>
+						<a href="http://static.zuchecdn.com/download/SZZC.apk" target="_blank" class="indexandroidxz">Android版下载</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="fl sz_hldz">中国汽车租赁行业领导者</div>
+		<div class="clear">&nbsp;</div>
+		<div class="sz_toolkit">
+			<ul>
+				<li class="contmysz" onmouseover="document.getElementById('contmyszlist').style.display='block'" onmouseout="document.getElementById('contmyszlist').style.display='none'">
+					<a href="http://mycar.zuche.com/queryOrder/queryOrder.do" class="bdnone">我的神州 <span class="contmyszdown">&nbsp;</span></a>
+					<div style="display: none;" id="contmyszlist" class="contmyszlist d_none">
+						<dl>
+							<dt>我的神州 <span class="contmyszup">&nbsp;</span></dt>
+							<dd style="position:relative;">
+								<a href="http://mycar.zuche.com/queryOrder/queryOrder.do">我的订单</a>
+								</dd>
+							<dd><a href="http://mycar.zuche.com/myAssetsController/myAsset.do">我的资产</a></dd>
+							<dd><a href="http://mycar.zuche.com/creditCard/manage.do">我的账户</a></dd>							
+						</dl>
+						</div>
+				</li>
+				<li><a target="_blank" href="http://help.zuche.com/sitemap/">网站导航</a></li>
+				<li><a target="_blank" href="http://help.zuche.com/">帮助中心</a></li>
+				<li class="telDown">
+				<div class="phone fl" style="cursor:pointer">&nbsp;</div>
+				<sapn style="display:inline-block;width:20px;height:29px;background:url(http://image.zuchecdn.com/newversion/common/telDown.png) no-repeat center;cursor:pointer;"></sapn>
+				<img alt="" src="img/telother.png" style="display:none;position:absolute;right:0;top:30px;">
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 <!--nav-->
-@include("yemei")
-<div class="longConCam">
+<div class="sz_nav">
+	<div class="base_nav">
+		<div class="index_logo" onclick="location='http://www.zuche.com' "></div>
+		<div class="sz_menu">
+			<ul>
+				<li>
+					<a id="top_monitor_index" target="_parent" href="http://www.zuche.com/">
+						首页
+					</a>
+				</li>
+				<li>
+					<a id="top_monitor_short" target="_parent" href="http://order.zuche.com/smfw/index.do?flag=1">
+						上门取送
+					</a>
+				</li>
+				<li>
+					<a id="top_monitor_short" target="_parent" href="http://order.zuche.com/smfw/index.do?flag=2">
+						到店取还
+					</a>
+				</li>
+				<li class="cur">
+							<a id="top_monitor_driver" target="_parent" href="http://zhuanche.zuche.com/">
+								神州专车
+							</a>
+						</li>
+					<li>
+					<a id="top_monitor_long" target="_parent" href="http://changzu.zuche.com/">
+						长租服务
+					</a>
+				</li>
+				<li>
+					<a id="top_monitor_enterprise" target="_parent" href="http://carbusiness.zuche.com/"> 
+						企业租车
+					</a>
+				</li>
+				<li>
+					<a id="top_monitor_convenience" target="_parent" href="http://easyride.zuche.com/">
+						顺风车站
+					</a>
+				</li>
+				<li class="none980">
+					<a id="top_monitor_store" target="_parent" href="http://service.zuche.com/">
+						门店查询
+					</a>
+				</li>
+				<li class="none980">
+					<a id="top_monitor_usedCar" target="_blank" href="http://huodong.zuche.com/">
+						特惠活动
+					</a>
+				</li>
+				<li class="morecur">
+					<a href="#">更多<span class="index_moreup">&nbsp;</span></a>
+					<div class="sz_more_menu">
+						<dl class="clearfix">
+							<dd class="sz_m_m_l">&nbsp;</dd>
+							<dd class="sz_m_m_b" style="padding:0px;"><a target="_parent" href="http://service.zuche.com/">门店查询</a></dd>
+							<dd class="sz_m_m_b"><a target="_blank" href="http://huodong.zuche.com/">特惠活动</a></dd>
+							<dd class="sz_m_m_b"><a href="http://international.zuche.com/">国际租车</a></dd>
+							<dd class="sz_m_m_r">&nbsp;</dd>
+						</dl>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><div class="longConCam">
 	<div class="indexShow">
 		<a style="display: none;" href="javascript:void(0)" class="ucar_indexShowLeft" hidefocus="hideFocus"></a>
 		<a style="display: none;" href="javascript:void(0)" class="ucar_indexShowRight" hidefocus="hideFocus"></a>
