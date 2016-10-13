@@ -12,74 +12,60 @@
 |
 */
 //前台活动页
+Route::resource("/huodong","HuodongController");
 Route::get('/huodong', function(){
 	return view('huodong');
 });
-
 
 //前台门店页
 Route::get('/service', function(){
 	return view('service');
 });
 
-
 //前台租车页
-Route::get('/', 'ZuCheController@index');
-
+Route::get('/zuche', function(){
+	return view('zuche');
+});
 
 //前台顺风车页
 Route::get('/easyride', function(){
 	return view('easyride');
 });
 
-
 //前台个人中心页
 Route::get('/myzuche', function(){
 	return view('myzuche');
 });
 
-Route::get('/yemei', function(){
-	return view('yemei');
-});
 //前台专车页
 Route::get('/zhuanche', function(){
 	return view('zhuanche');
 });
-
 
 //前台企业租车页
 Route::get('/carbusiness', function(){
 	return view('carbusiness');
 });
 
-
 //前台注册页
 Route::get('/passport', function(){
 	return view('passport');
 });
 
-
-Route::post('/passport',"PassportController@store");
-
-
 //前台登录页
-
-Route::get('/login1', function(){
+Route::get('/login', function(){
 	return view('login');
 });
-Route::post('/login1',"Login1Controller@dologin");
-Route::get('logout','Login1Controller@logout');
+
 //前台长租页
 Route::get('/changzu', function(){
 	return view('changzu');
 });
 
-
 //前台到店取还页
 Route::get('/order2', function(){
 	return view('order2');
 });
-
 
 //前台上门取送页
 Route::get('/order1', function(){
@@ -92,10 +78,9 @@ Route::get('/admin', function () {
 });
 
 //优惠页面
-Route::get('/abc', function () {
-	return view('youhui');
+Route::get('/youhui', function () {
+	return view('admin.part.youhui');
 });
-
 //后台登录页
 Route::get('/login', function () {
 	return view('admin.login.login');
@@ -110,7 +95,6 @@ Route::get('/user', function () {
 Route::get('/jq', function () {
 	return view('admin.user.jq');
 });
-
 //后台页面，不登录可直接进入的页面
 //LoginController	login dologin logout captcha
 //登录表单
@@ -127,3 +111,10 @@ Route::group(["prefix"=>"admin","middleware"=>"myauth"], function () {
 
 	Route::get("logout","Admin\LoginController@logout"); //执行退出
 });
+
+//编辑器路由
+Route::get('admin/edit',function(){
+	return view('admin.part.edit');
+});
+
+

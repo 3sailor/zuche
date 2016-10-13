@@ -62,6 +62,72 @@ var __currentdatetime = '';
 	<input id="act" name="act" value="loginSys" type="hidden">
 	<input id="historyLocation" name="historyLocation" type="hidden">
 </form>
+<div class="zc_head_bd">
+    <div class="zc_main">
+        <a href="http://www.zuche.com/" class="zc_logo" alt="神州租车"></a>
+        <ul class="zc_menu">
+            <li>
+           	 	<a href="http://www.zuche.com/" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','首页-首页（顶）')">首页</a>
+            </li>
+            <li class="cur">
+            	<a href="http://order.zuche.com/smfw/index.do?flag=1" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','首页-上门取送（顶）')">上门取送</a>
+            </li>
+            <li>
+            	<a href="http://order.zuche.com/smfw/index.do?flag=2" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','首页-到店取还（顶）')">到店取还</a>
+            </li>
+            <li>
+           		<a href="http://zhuanche.zuche.com/" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','首页-神州专车（顶）')">神州专车</a>
+            </li>
+            <li>
+            	<a href="http://changzu.zuche.com/" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','首页-长租（顶）')">长租</a>
+            </li>
+            <li>
+           		<a href="http://carbusiness.zuche.com/" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','首页-企业租车（顶）')">企业租车</a>
+            </li>
+            <li>
+            	<a href="http://easyride.zuche.com/" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','首页-顺风车（顶）')">顺风车</a>
+            </li>
+            <li>
+            	<a href="http://service.zuche.com/" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','首页-门店（顶）')">门店</a>
+            </li>
+            <li>
+            	<a href="http://huodong.zuche.com/" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','首页-活动（顶）')">活动</a>
+            </li>
+            
+        </ul>
+        <div class="zcindex_login">
+            <div style="display: block;" class="wdl" id="notLogin">
+                <a href="javascript:void(0);" class="colfabe00" id="loginBT" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','首页-登录（顶）')">登录</a>
+                <b>/</b>
+                <a href="https://passport.zuche.com/memberManage/xtoploginMember.do?act=registerSys" class="colfabe00" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','首页-注册（顶）')">注册</a>
+                <a href="https://passport.zuche.com/memberManage/xtoploginMember.do" class="colc8c8ce ml20" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','首页-我的神州（顶）')">我的神州</a>
+            </div>
+            <div class="ydl" style="display: none;" id="alreadyLogin">
+                <h1 id="topLoginName"></h1>
+                <div class="zc_index_my">
+                    <a href="http://mycar.zuche.com/queryOrder/queryOrder.do" class="top">我的神州<i class="zc_ordown"></i></a>
+                    <div class="contmyszlist">
+                    <div class="p-re">
+                            <span class="y">◆</span>
+                            <a href="http://mycar.zuche.com/queryOrder/queryOrder.do" class="bhpr reddot" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','我的神州-我的订单')">我的订单
+                            </a>
+                            <a href="http://mycar.zuche.com/myAssetsController/myAsset.do">我的资产</a>
+                            <a href="http://mycar.zuche.com/creditCard/manage.do">我的账户</a>
+                            <a href="https://passport.zuche.com/memberManage/xtoploginMember.do?act=delsession" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','我的神州-退出登陆')">退出登录</a>
+                        </div>
+                    	</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="zc_phone_bd">
+            <div class="p-re zc_p_h">
+                <span class="zc-tel"></span>
+                <div class="zc_ga_phonebox"><img src="img/zc_gaphone.png" alt="港澳台及海外电话861058209555"></div>
+            </div>
+        </div>
+    </div>
+</div><!--head end -->
 @include("yemei")
 <!--headlist start -->
 <div style="display: block;" class="zc_headlist zc_boxshd">

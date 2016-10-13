@@ -44,6 +44,155 @@
 <!-- 新版公用js文件end -->
 <div class="zc_head_bd">
     <div class="zc_main">
+        <a href="http://www.zuche.com/" class="zc_logo" alt="神州租车"></a>
+        <div class="zc_phone_bd">
+			<div class="p-re zc_p_h">
+				<span class="zc-tel"></span>
+				<div class="zc_ga_phonebox"><img src="img/zc_gaphone.png" alt="港澳台及海外电话861058209555"></div>
+			</div>
+		</div>
+    </div>
+</div><!--head end -->
+<div class="zc-pbox">
+	<div class="zc-inbox">
+		<div class="reg-l">
+			<p class="reg-title ltitle">注册新用户</p>
+			<form id="myform" name="myform" autocomplete="off">
+			<ul>
+				<li class="zc-iptbox">
+					<span class="rstar">*</span>
+					<label><span class="zc-iuser"></span></label>
+					<input name="xname" id="xname" class="zc-ipt t_val" value="请输入您的真实姓名" maxlength="20" type="text">
+					<input id="ffzfname" type="hidden">
+					<div class="input-erreg ipt-err" id="namecheck_tips">
+						<span class="arrowbox">◆<span class="arrow">◆</span></span>
+						<span class="zc-retan"></span>
+						<i></i>
+						<span class="zc-close"></span>
+					</div>
+				</li>
+				<li class="zc-iptbox">
+					<span class="rstar">*</span>
+					<label><span class="zc-iphone"></span></label>
+					<input name="xmobile" id="xmobile" class="zc-ipt t_val" value="请输入您的手机号" maxlength="11" default-value="请输入您的手机号" type="text">
+					<input id="smsOverTime" type="hidden">
+					<div class="input-erreg ipt-err" id="mobilecheck_tips">
+						<span class="arrowbox">◆<span class="arrow">◆</span></span>
+						<span class="zc-retan"></span>
+						<i></i>
+						<span class="zc-close"></span>
+					</div>
+				</li>
+				<li class="zc-iptbox" style="height:40px;">
+					<span class="rstar">*</span>
+					<label><span class="zc-idtm"></span></label>
+					<input class="zc-iptsht t_val" name="validateCode" id="validateCode" value="请输入手机动态码" maxlength="6" default-value="请输入手机动态码" autocomplete="off" type="text"><input id="ffzfvalidatecode" type="hidden"><span class="btn-dtm btn-getdtm" id="getYzmBtn">获取手机动态码</span>
+					<span class="btn-dtm btn-dtmdao" id="count" style="display:none"></span>
+					<div class="input-erreg ipt-err" id="yzmcheck_tips">
+						<span class="arrowbox">◆<span class="arrow">◆</span></span>
+						<span class="zc-retan"></span>
+						<i></i>
+						<span class="zc-close"></span>
+					</div>
+				</li>
+				<li class="zc-iptbox">
+					<span class="rstar">*</span>
+					<label><span class="zc-ipsw"></span></label>
+					<input class="zc-ipt ipt-passwordH" id="xpassword" value="建议6-18位数字、字母、符号的组合" maxlength="20" style="display:none" type="password">
+					<input class="zc-ipt ipt-passwordS" id="xpassword1" value="建议6-18位数字、字母、符号的组合" maxlength="20" type="text">
+					<input id="ffzfpassword" type="hidden">
+					<span class="zc-secret zc-peyes bhide"></span>
+					<div class="input-erreg ipt-err" id="passwordcheck_tips">
+						<span class="arrowbox">◆<span class="arrow">◆</span></span>
+						<span class="zc-retan"></span>
+						<i></i>
+						<span class="zc-close"></span>
+					</div>
+					<div class="zc-safepsw" id="pwdLevelDiv">
+						<span class="safe_1">弱</span>
+						<span class="safe_2">中</span>
+						<span class="safe_3">强</span>
+					</div>
+				</li>
+				<li class="zc-iptbox">
+					<label><span class="zc-iyhm"></span></label>
+					<input class="zc-ipt t_val" id="tempCardNO" value="如有优惠码，请填写优惠码" maxlength="20" type="text">
+					<input id="ffzftempCardNO" type="hidden">
+					<div class="input-erreg ipt-err" id="couponcheck_tips">
+						<span class="arrowbox">◆<span class="arrow">◆</span></span>
+						<span class="zc-retan"></span>
+						<i></i>
+						<span class="zc-close"></span>
+					</div>
+				</li>
+			</ul>
+			</form>
+			<p class="lfwtk"><input class="zc-yes zc-rayes" checked="checked" type="checkbox"><span class="zc-yes zc-blyes"></span>我已阅读并同意<a href="http://huodong.zuche.com/jsp/common/rulesKJT.html" target="_blank">《神州租车会员服务条款》</a></p>
+			<a class="zc-btn btn-reg" href="javascript:void(0);" id="nextButton" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','注册页-注册按钮')">注册</a>
+		</div>
+		<div class="reg-r">
+			<p class="reg-title rtitle">已有账号？<a href="https://passport.zuche.com/member/loginandregist/login.do" rel="nofollow" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','注册页立即登录')">立即登录&nbsp;»</a></p>
+			<div class="wapbox" style="padding:0px;border:0px;">
+				<img class="qcode" src="img/tipsregist.png" usemap="#Map">
+				<map name="Map">
+				  <area shape="rect" coords="142,321,252,341" href="http://huodong.zuche.com/activityplanning/topic/ojnewmemebr.html" target="_blank">
+				</map>
+				<div style="display:none;">
+					<p class="text">手机预定专享优惠</p>
+					<p class="text textc">新客户首日<span>0元</span>租</p>
+					<img class="qcode" src="img/qcode.jpg">
+					<p class="mobtxt">手机浏览器访问: m.zuche.com</p>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="p-re zc_b_bd">
+	<div class="zc_brand">
+		<div class="zc_main">
+			<ul>
+				<li>
+					<i class="zc-yecx"></i>
+					<p><b>100+</b>车型</p>
+				</li>
+				<li>
+					<i class="zc-yewd"></i>
+					<p><b>1000+</b>网点</p>
+				</li>
+				<li>
+					<i class="zc-yecxn"></i>
+					<p><b>100%</b>车险</p>
+				</li>
+				<li>
+					<i class="zc-yelc"></i>
+					<p>无限里程</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- 验证码浮层 -->
+<div class="bg_zhezhao" style="display: none;"></div>
+<div class="zc_yzm_alert" style="display: none;">
+	<div class="top">
+		<p>请先输入以下验证码，获取手机动态码</p>
+		<span class="yzm-close zc-close" id="alertclose"></span>
+	</div>
+	<ul class="yzmul">
+		<li class="zc-iptbox">
+			<label><span class="zc-iyzm"></span></label>
+			<input class="zc-iptsht t_val" id="xyzm" value="请输入右侧验证码" maxlength="6" style="width:145px;color: rgb(147, 147, 158);" type="text">
+			<span class="pic-yzm"><img id="kaptchaImage"><i class="zc-fresh" id="changeYzmBT"></i></span>
+			<div class="input-errlog ipt-err" id="codecheck_tips" style="display: none;">
+				<span class="arrowbox">◆<span class="arrow">◆</span></span>
+				<span class="zc-retan"></span>
+				<i class="pl0"></i>
+				<span class="zc-close"></span>
+			</div>
+		</li>	
+	</ul>
         <a href="{{  URL('/')}}" class="zc_logo" alt="神州租车"></a>
         <div class="zc_phone_bd">
 			<div class="p-re zc_p_h">

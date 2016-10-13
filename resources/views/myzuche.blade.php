@@ -44,6 +44,336 @@
 	<input id="act" name="act" value="loginSys" type="hidden">
 	<input id="historyLocation" name="historyLocation" type="hidden">
 </form>
+<div class="zc_head_bd">
+    <div class="zc_main">
+        <a href="http://www.zuche.com/" class="zc_logo" alt="神州租车"></a>
+        <ul class="zc_menu">
+            <li><a href="http://www.zuche.com/">首页</a></li>
+           	<li><a href="http://order.zuche.com/smfw/index.do?flag=1">上门取送</a></li>
+            <li><a href="http://order.zuche.com/smfw/index.do?flag=2">到店取还</a></li>
+            <li><a href="http://zhuanche.zuche.com/">神州专车</a></li>
+            <li><a href="http://changzu.zuche.com/">长租</a></li>
+            <li><a href="http://carbusiness.zuche.com/">企业租车</a></li>
+            <li><a href="http://easyride.zuche.com/">顺风车</a></li>
+            <li><a href="http://service.zuche.com/">门店</a></li>
+            <li><a href="http://huodong.zuche.com/">活动</a></li>
+            <li><a href="http://international.zuche.com/">国际租车</a></li>
+        </ul>
+        <div class="zcindex_login">
+            <div style="display: none;" class="wdl" id="notLogin">
+                <a href="javascript:void(0);" class="colfabe00" id="loginBT">登录</a>
+                <b>/</b>
+                <a href="https://passport.zuche.com/memberManage/xtoploginMember.do?act=registerSys" class="colfabe00">注册</a>
+                <a href="https://passport.zuche.com/memberManage/xtoploginMember.do" class="colc8c8ce ml20">我的神州</a>
+            </div>
+            <div class="ydl" style="display: block;" id="alreadyLogin">
+                <h1 id="topLoginName">你好，吴***</h1>
+                <div class="zc_index_my">
+                    <a href="http://mycar.zuche.com/queryOrder/queryOrder.do" class="top">我的神州<i class="zc_ordown"></i></a>
+                    <div class="contmyszlist">
+                    <div class="p-re">
+                            <span class="y">◆</span>
+                            <a href="http://mycar.zuche.com/queryOrder/queryOrder.do" class="bhpr reddot">我的订单
+                            </a>
+                            <a href="http://mycar.zuche.com/queryPoint/queryAllPoint.do">我的资产</a>
+                            <a href="http://mycar.zuche.com/creditCard/manage.do">我的账户</a>
+                            <a href="https://passport.zuche.com/memberManage/xtoploginMember.do?act=delsession">退出登录</a>
+                        </div>
+                    	</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="zc_phone_bd">
+            <div class="p-re zc_p_h">
+                <span class="zc-tel"></span>
+                <div class="zc_ga_phonebox"><img src="img/zc_gaphone.png" alt="港澳台及海外电话861058209555"></div>
+            </div>
+        </div>
+    </div>
+</div><!--head end -->
+<!--myhead start -->
+<input value="" id="isBusinessMemberInfo" type="hidden">
+<div class="zc_myhead">
+    <div class="zc_main">
+        <div class="fl my_weather">
+            <h2><i class="sssd"></i></h2>
+            <div class="weatherinfo">
+                <iframe scrolling="no" allowtransparency="true" src="js/index.htm" frameborder="0" height="30" width="170"></iframe>
+            </div>
+        </div>
+        <div class="fl my_member">
+        <div class="mm_hpicon" id="hpicon">
+			        <i class="ordinary_m_icon"></i></div>
+		     
+		        <p>
+		        	<span class="mm_name">
+		        	吴***</span>　
+		        	<span class="mm_jb" id="mm_jb">普通卡</span>
+		        </p>
+			<a href="http://mycar.zuche.com/member/getMemberLevel.do">
+			<div class="progressbar">
+				<div style="width: 0%;" class="wbg"></div>
+				<div class="number">
+		           	<span id="showNumber1">0</span>/<span id="showNumber2">50</span>
+				</div>
+			</div>
+			</a>
+			<div class="fs">我的累计积分: <span class="cor pointer" id="showNumber3" onclick="window.location.href='http://mycar.zuche.com/queryPoint/queryAllPoint.do?flag=curIntegral'">0</span>，<span class="cor pointer" id="showNumber4">+50</span>就能成为<span class="cbl pointer" id="showLevelDesc">银卡</span>会员！</div>
+           		</div>
+        <div class="fl my_infor">
+	        <ul class="privateinvestor">
+		                <li id="rentcoinNum">
+		                    <a href="http://mycar.zuche.com/queryPoint/queryAllPoint.do" class="gojf">
+		                        <b id="point">0</b>
+		                    </a>
+	                        <span>
+	                        	<a href="http://mycar.zuche.com/queryPoint/queryAllPoint.do">可用积分</a>
+	                        	<i id="rentcoinRedPoint"></i> 
+	                        	<div class="integral-sc">
+	                        		<img src="img/integralsc.png">
+	                        		<i><a href="http://mycar.zuche.com/scoreshop/getGoodsList.do" class="or">积分换专车券</a></i>
+	                        	</div>
+	                        </span>
+		                </li>
+		                <li id="couponNum">
+		                    <a href="http://mycar.zuche.com/queryCoupon/queryCoupon.do" class="goyhq">
+		                        <b id="couponCount">1</b>
+		                        <span>优惠券<i id="couponRedPoint"></i></span>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="http://mycar.zuche.com/queryAccount/queryAccount_detail.do" class="goczk">
+		                        <b id="giftcardCount">0</b>
+		                        <span>储值卡</span>
+		                    </a>
+		                </li>
+		            </ul>
+				</div>
+        <div class="clear"></div>
+    </div>
+</div>
+<script type="text/javascript">
+	seajs.use(['jspath/mm/personmember/member_left']);
+</script><!--myhead end -->
+<!--my main start -->
+<div class="zc_main zc_mycon">
+    <div class="zc_myleft fl">
+  	<dl class="meberlist">
+            <dt>我的订单</dt>
+            <dd class="optdd" id="orderTitle"><a href="javascript:void(0);" onclick="window.location.href='http://mycar.zuche.com/queryOrder/queryOrder.do'">短租自驾 
+            	<span id="leftOrderCount1">(0)</span></a></dd>
+            <dd id="sfcheTitle"><a href="javascript:void(0);" onclick="window.location.href='http://mycar.zuche.com/queryOrder/queryOrder.do?source=sf'">顺风车
+            	 <span id="leftOrderCount2">(0)</span></a></dd>
+        </dl>
+        <dl class="meberlist" id="assertTitle">
+            <dt id="assertTitle">我的资产</dt>
+            <dd><a href="http://mycar.zuche.com/queryPoint/queryAllPoint.do">可用积分<span id="leftAssertCount1">(0)</span></a></dd>
+            <dd><a href="http://mycar.zuche.com/queryCoupon/queryCoupon.do">优惠券<span id="leftAssertCount2">(1)</span></a></dd>
+            <dd><a href="http://mycar.zuche.com/queryAccount/queryAccount_detail.do">储值卡<span id="leftAssertCount3">(0)</span></a></dd>
+        </dl>
+        <dl class="meberlist" id="accountTitle">
+            <dt id="accountTitle">我的账户</dt>
+            <dd><a href="http://mycar.zuche.com/creditCard/manage.do">信用卡管理</a></dd>
+            <dd><a href="http://mycar.zuche.com/member/quickpay/quicklyPayOrderList.do">快捷通</a></dd>
+            <dd class="grade"><a href="http://mycar.zuche.com/member/getMemberLevel.do">我的等级</a></dd>
+            <dd><a href="http://mycar.zuche.com/member/person/personinfo.do">我的信息</a></dd>
+            <dd><a href="http://mycar.zuche.com/member/person/personinfo/modifyPWD.do">修改密码</a></dd>
+        </dl>
+        <dl class="meberlist">
+            <dt>会员条款</dt>
+            <dd id="mebnotcTitle"><a href="http://mycar.zuche.com/member/person/personinfo/memberNotify.do">会员章程</a></dd>
+            <dd id="mebruleTitle"><a href="http://mycar.zuche.com/member/person/personinfo/memberRule.do">会员细则</a></dd>
+        </dl>
+    </div>
+ <script type="text/javascript">
+ 	seajs.use('jspath/mm/convenience/zcmyleft_title');
+ </script><div class="zc_myright fr">
+    	<!-- 顺风车短信列表 -->
+		<!-- 订单列表开始了 -->
+    	<div class="orderlist_bd">
+            <h2>
+            	自驾订单</h2>
+            <div class="zc_query-condition_bd">
+                <div class="zc_box">
+                    <div class="fr" id="timeClear" style="display:none"><input value="清除" class="zc_blue_sub" type="button"></div>
+                    <div class="fr pl15"><input id="searchBtn" value="查询" class="zc_gray_sub" type="button"></div>
+                    <div class="fr"><input class="w175 zc_iptcalendar" id="toDate" autocomplete="on" readonly="readonly" type="text"></div>
+                    <div class="fr">-</div>
+                    <div class="fr"><input class="w175 zc_iptcalendar" id="fromDate" autocomplete="on" readonly="readonly" type="text"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="h20"></div>
+            <div class="subbox_m"></div>
+            <div class="subbox">
+                <a class="cura" href="javascript:void(0);" status="0">全部</a>
+                <a href="javascript:void(0);" status="1">处理中</a>
+                <a href="javascript:void(0);" status="2">等待付款<i class="zc_newsinfo" style="display:none"></i></a>
+                <a href="javascript:void(0);" status="3">预订成功</a>
+                <a href="javascript:void(0);" status="4">租赁中</a>
+                <a href="javascript:void(0);" status="5">已完成</a>
+                <a href="javascript:void(0);" status="6">已取消</a>
+                <div class="clear"></div>
+            </div>
+            <div class="zc_myorder_info">
+            	<div class="zc_notinfo_bd">
+                    <img src="img/grayben.png" height="120" width="120">
+                    <p>还没租过车？  速速来体验吧</p>
+                    <a href="http://order.zuche.com/" class="zc_orange_sub">立即租车</a>
+                </div>
+                </div>
+            <div class="sz_page_box">
+                <div class="sz_page">
+                    <!--分页开始 -->
+  					<div class="sz_page">
+		</div><!--分页结束 -->
+                </div>
+            </div>
+        </div>
+        <div class="orderstate_bd">
+            <h3>订单状态说明</h3>
+            <ul>
+                <li>
+                    <span class="s-green">预订成功</span>
+                    <p>订单已确认，尚未提车</p>
+                </li>
+                <li>
+                    <span class="s-orange">等待付款</span>
+                    <p>订单尚未付款，请在1小时内完成支付</p>
+                </li>
+                <li>
+                    <span class="s-blue">处理中</span>
+                    <p>您的订单已提交，正在处理中</p>
+                </li>
+                <li>
+                    <span class="s-blue">租赁中</span>
+                    <p>车辆正在租赁过程中</p>
+                </li>
+                <li>
+                    <span class="s-orange">待评价</span>
+                    <p>订单完成48小时内，可对我们做出评价</p>
+                </li>
+                <li>
+                    <span class="s-yellow">已完成</span>
+                    <p>已还车，订单结算完毕</p>
+                </li>
+                <li>
+                    <span class="s-gray">已取消</span>
+                    <p>订单已经取消</p>
+                </li>
+            </ul>
+        </div>
+        <div class="notice_bd">
+            <h3>注意事项</h3>
+            <p>1. 修改或取消订单，请您尽早致电400 616 6666申请，送车上门或服务点订单请至少在我们的工作时间内（08:00-20:00）提前2小时修改；</p>
+            <p>2. 预付订单，逾时不履行或取消的，退还您预付款中的基本保险、手续费及可选服务费款项，已付费用将作为违约金恕不退还；</p>
+            <p>3. 系统将为您保留一年之内的订单，如需查询更早的订单，请致电24小时热线。</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <input id="self_order_success" value="预订成功" type="hidden">
+	<input id="self_wating_payment" value="等待付款" type="hidden">
+	<input id="self_handling" value="处理中" type="hidden">
+	<input id="self_leasing" value="租赁中" type="hidden">
+	<input id="self_cancel" value="已取消" type="hidden">
+	<input id="self_prove_fail" value="审核未通过" type="hidden">
+	<input id="memName" value="吴盟" type="hidden">
+</div>
+<input id="source" name="source" value="" type="hidden">
+<input id="calendar" type="hidden">
+<input id="datepicker" type="hidden">
+<input id="showTimeClear" value="true" type="hidden">
+<input id="referCount" value="0" type="hidden">
+<!--my main end -->
+<!--guid start -->
+<div class="guide">
+	<div class="cover">
+		<div class="content step-one">
+			<div class="close-btn"></div>
+			<div class="detail one"></div>
+			<div class="next-two-btn"></div>
+			<div class="next-three-btn"></div>
+			<div class="know-btn"></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	seajs.use(['jspath/mm/accountmanage/cover']); //引入js
+</script>
+<!--guid end -->
+<!--footmenu start -->
+<div class="zc_righttool">
+	<div class="zc_tool">
+    <ul class="ulbox">
+        <li class="libox p-re" id="rtoolphone">
+            <a href="http://shouji.zuche.com/" target="_blank" class="abox"><span class="zc_phone_i"></span>手<br>机<br>版</a>
+            <div class="zc_tool_phone" style="display:none ">
+                <div class="p-re">
+                    <div class="rightsj">◆<span class="arrowicon">◆</span></div>
+                    <div class="rtoolphone">
+                        <img src="img/indexqcode.png" class="qcode" height="120" width="120">
+                        <p>扫描二维码下载</p><p>神州租车手机版</p>
+                        <a href="https://itunes.apple.com/cn/app/id454685734?mt=8" rel="nofollow" target="_blank" onclick="JavaScript:dcsMultiTrack('DCS.dcsuri', '/virtual/shouoji/down/iphone.event','WT.ti_event', '手机客户端-iPhone下载')" class="rtooldownbut">iPhone 版下载</a>
+                        <a href="http://static.zuchecdn.com/download/SZZC.apk" rel="nofollow" target="_blank" onclick="JavaScript:dcsMultiTrack('DCS.dcsuri', '/virtual/shouoji/down/android.event','WT.ti_event', '手机客户端-Android下载')" class="rtooldownbut">Android 版下载</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    </div>
+</div>
+<div class="zc_foottool">
+    <ul>
+        <li>
+            <a href="javascript:void(0);" onclick="javascript:window.open('http://qiao.baidu.com/v3/?module=default&amp;controller=im&amp;action=index&amp;ucid=3812987&amp;type=n&amp;siteid=1401017',
+            		'newwindow','toolbar=no,scrollbars=yes,resizable=no,top=50%,left=50%,width=800,height=600');">
+            <span class="zc_service_i"></span></a>
+            <div class="zc_foottooltipe">
+                <div class="p-re"><div class="rightsj">◆</div>在线客服</div>
+            </div>
+        </li>
+        <li>
+            <a href="http://help.zuche.com/" target="_blank"><span class="zc_help_i"></span></a>
+            <div class="zc_foottooltipe">
+                <div class="p-re"><div class="rightsj">◆</div>帮助中心</div>
+            </div>
+        </li>
+        <li><a href="javascript:void(0);"><span class="zc_share_i"></span></a>
+        	<div class="zc_tool_share">
+        	<div class="rightsj">◆</div>
+                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                    <div id="bdshare_l_c"><h6>分享到</h6>
+                    	<ul>
+                    		<li><a href="#" class="bds_mshare mshare">一键分享</a></li>
+                    		<li><a href="#" class="bds_qzone qqkj">QQ空间</a></li>
+                    		<li><a href="#" class="bds_tsina xlwb">新浪微博</a></li>
+                    		<li><a href="#" class="bds_bdysc bdysc">百度云收藏</a></li>
+                    		<li><a href="#" class="bds_renren rrw">人人网</a></li>
+                    		<li><a href="#" class="bds_tqq txwb">腾讯微博</a></li>
+                    		<li><a href="#" class="bds_bdxc bdxc">百度相册</a></li>
+                    		<li><a href="#" class="bds_kaixin001 kxw">开心网</a></li>
+                    		<li><a href="#" class="bds_tqf txpy">腾讯朋友</a></li>
+                    		<li><a href="#" class="bds_tieba bdtb">百度贴吧</a></li>
+                    		<li><a href="#" class="bds_douban db">豆瓣网</a></li>
+                    		<li><a href="#" class="bds_tsohu shwb">搜狐微博</a></li>
+                    		<li><a href="#" class="bds_bdhome bdhome">百度新首页</a></li>
+                    		<li><a href="#" class="bds_sqq sqq">QQ好友</a></li>
+                    		<li><a href="#" class="bds_thx thx">和讯微博</a></li>
+                    		<li><a href="#" class="bds_more">更多...</a></li>
+                    	</ul>
+                    </div>
+        		</div>
+            </div>        	
+        </li>
+        <li>
+            <a href="#"><span class="zc_top_i"></span></a>
+            <div class="zc_foottooltipe">
+                <div class="p-re"><div class="rightsj">◆</div>返回顶部</div>
+            </div>
+        </li>
+    </ul>
+</div>
 @include('yemei')
 <!--myhead start -->
 <input value="" id="isBusinessMemberInfo" type="hidden">
