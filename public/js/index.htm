@@ -1,0 +1,70 @@
+<html manifest="http://i.tianqi.com/app/config/index.appcache"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>海口天气预报</title>
+<script type="text/javascript" src="index_data/jquery-1.js"></script><script type="text/javascript">
+var color = bgcolor = bdcolor = site = icon = "";
+var num = 0;
+$(document).ready(function(){
+	init();
+
+	if (typeof(bgcolor) != 'undefined' && bgcolor != '') {
+		$("#mobile4").css('background-color', bgcolor);
+	}
+	if (typeof(bdcolor) != 'undefined' && bdcolor != '') {
+		$("#mobile4").css('border', '1px solid ' + bdcolor);
+	}
+	if (typeof(color) != 'undefined' && color != '') {
+		$("#mobile4 .f1").css('color', color);
+	}
+});
+
+function init(){
+    if(num==0) num=3;
+
+    for (var i=3; i > num; i--) {
+    	$("#day_"+i).remove();
+    }
+
+	if (typeof(icon) != 'undefined' && icon != '') {
+		$("img.pngtqico").each(function(i){
+			this.src = this.src.replace("tianqibig", icon);
+		});
+	}
+}
+
+/*移除img宽高，改变新的宽高*/
+$(document).ready(function(){ 
+	$(".codebox .box .t2 .pngtqico").attr("style","border:0;width:25px;height:25px");
+});
+</script><style type="text/css">
+body{margin:0;padding:0;font:12px \5B8B\4F53, Arial, Tahoma, Helvetica, sans-serif;}
+body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, textarea, th, td{ margin: 0;padding: 0;}
+ul,li{list-style-type:none;}
+img{border:0;text-align:top;}
+em{ font-style:normal;}
+.crl{clear:both !important;}
+a:link,a:visited,a:hover,a:active{color:#333;text-decoration:none;}
+a:hover{color:#f00;text-decoration: underline;}
+.codebox{ float:left;}
+.codebox .box{ float:left; height:36px; text-align:right; line-height:36px;}
+.codebox .box .t1,.codebox .box .t3{float:left; }
+.codebox .box .t2{ margin:0 2px;float:left; padding:5px 0;}
+.codebox .box a.more{ float:left; margin:12px 0 0 5px; width:8px; height:10px; background:url("http://i.tianqi.com/img/plugin-widget.png") no-repeat 0 -24px; display:block; overflow:hidden;}
+.codebox .box a.more:hover{background-position:-9px -24px;}
+.green {color: #094;}
+.red { color: #c00;}
+</style></head>
+<!--[if IE 6]>
+<script type="text/javascript" mce_src="DD_belatedPNG.js" src="http://img.cxmx.com.cn/static/js/DD_belatedPNG.js"></script>
+<script type="text/javascript">DD_belatedPNG.fix(".pngtqico");</script> 
+<![endif]-->
+
+
+
+
+<body style="background-color:transparent">
+<div class="codebox" id="mobile4">
+	<div class="box"><a target="_blank" href="http://beijing.tianqi.com/" title="查看天气详情"><span class="t1 f1">北京</span><span class="t2"><img class="pngtqico" src="index_data/b1.png" style="border:0;width:25px;height:25px" align="absmiddle"></span><span class="t3 f1"><em class="green f1">18℃</em>～<em class="red f1">8℃</em></span></a><a class="more" target="_blank" href="http://beijing.tianqi.com/" title="查看天气详情"> </a></div>
+</div>
+
+<script type="text/javascript">num=0;</script></body></html>

@@ -1,0 +1,2 @@
+/*! Copyright©2008-2016 zuche.com All Rights Reserved.2016-10-09 */
+!function($){$.fn.hoverDelay=function(options){var hoverTimer,outTimer,defaults={hoverDuring:200,outDuring:200,hoverEvent:function(){$.noop()},outEvent:function(){$.noop()}},sets=$.extend(defaults,options||{}),that=this;return $(this).each(function(){$(this).hover(function(){clearTimeout(outTimer),hoverTimer=setTimeout(function(){sets.hoverEvent.apply(that)},sets.hoverDuring)},function(){clearTimeout(hoverTimer),outTimer=setTimeout(function(){sets.outEvent.apply(that)},sets.outDuring)})})}}(jQuery);
