@@ -377,7 +377,7 @@
 						</li> -->
 
 						<li>
-							<a href="{{ URL('/user') }}" class="dropdown-toggle">
+							<a href="#" class="dropdown-toggle">
 								<i class="icon-user"></i>
 								<span class="menu-text"> 用户管理 </span>
 
@@ -491,13 +491,35 @@
 								</li>
 
 								<li>
-									<a href="{{ URL('/youhui') }}" class="dropdown-toggle">
+									<a href="#" class="dropdown-toggle">
 										<i class="icon-double-angle-right"></i>
 
 										活动页面
 										<b class="arrow icon-angle-down"></b>
 									</a>
 
+									<ul class="submenu">
+										<li>
+											<a href="#">
+												<i class="icon-leaf"></i>
+												添加活动页
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<i class="icon-leaf"></i>
+												删除活动页
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<i class="icon-leaf"></i>
+												活动状态
+											</a>
+										</li>
+									</ul>
 								</li>
 
 								<li>
@@ -543,7 +565,7 @@
 
 									<ul class="submenu">
 										<li>
-											<a href="#">
+											<a href="{{ URL('/admin/changzu') }}">
 												<i class="icon-leaf"></i>
 												长租服务内容
 											</a>
@@ -598,86 +620,6 @@
 								</li>
 							</ul>
 						</li>
-
-						<!--<li>
-							<a href="widgets.html">
-								<i class="icon-list-alt"></i>
-								<span class="menu-text"> 插件 </span>
-							</a>
-						</li>
-
-						<li>
-							<a href="calendar.html">
-								<i class="icon-calendar"></i>
-
-								<span class="menu-text">
-									日历
-									<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
-										<i class="icon-warning-sign red bigger-130"></i>
-									</span>
-								</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="gallery.html">
-								<i class="icon-picture"></i>
-								<span class="menu-text"> 相册 </span>
-							</a>
-						</li>
-
-						<li>
-							<a href="#" class="dropdown-toggle">
-								<i class="icon-tag"></i>
-								<span class="menu-text"> 更多页面 </span>
-
-								<b class="arrow icon-angle-down"></b>
-							</a>
-
-							<ul class="submenu">
-								<li>
-									<a href="profile.html">
-										<i class="icon-double-angle-right"></i>
-										用户信息
-									</a>
-								</li>
-
-								<li>
-									<a href="inbox.html">
-										<i class="icon-double-angle-right"></i>
-										收件箱
-									</a>
-								</li>
-
-								<li>
-									<a href="pricing.html">
-										<i class="icon-double-angle-right"></i>
-										售价单
-									</a>
-								</li>
-
-								<li>
-									<a href="invoice.html">
-										<i class="icon-double-angle-right"></i>
-										购物车
-									</a>
-								</li>
-
-								<li>
-									<a href="timeline.html">
-										<i class="icon-double-angle-right"></i>
-										时间轴
-									</a>
-								</li>
-
-								<li>
-									<a href="login.html">
-										<i class="icon-double-angle-right"></i>
-										登录 &amp; 注册
-									</a>
-								</li>
-							</ul>
-						</li> -->
 
 						<li>
 							<a href="#" class="dropdown-toggle">
