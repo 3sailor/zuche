@@ -12,7 +12,7 @@ class PassportController extends Controller
     //注册
     public function store(REQUEST $request)
     {
-    	
+        
     	$a=($request->only('pwd','xpwd'));
 
     	if($a['pwd']==$a['xpwd']){

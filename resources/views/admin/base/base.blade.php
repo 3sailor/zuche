@@ -386,7 +386,7 @@
 
 							<ul class="submenu">
 								<li>
-									<a href="#">
+									<a href="{{ URL('/table') }}">
 										<i class="icon-double-angle-right"></i>
 										添加用户
 									</a>

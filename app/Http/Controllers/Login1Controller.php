@@ -30,6 +30,6 @@ class Login1Controller extends Controller
     public function logout()
     {
     	session()->forget('user');
-    	return redirect("login1");
+    	return redirect("login");
     }
 }

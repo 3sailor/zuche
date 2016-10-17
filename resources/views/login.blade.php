@@ -47,108 +47,6 @@
 <!-- 新版公用js文件end -->
 <div class="zc_head_bd">
     <div class="zc_main">
-        <a href="http://www.zuche.com/" class="zc_logo" alt="神州租车"></a>
-        <div class="zc_phone_bd">
-			<div class="p-re zc_p_h">
-				<span class="zc-tel"></span>
-				<div class="zc_ga_phonebox"><img src="img/zc_gaphone.png" alt="港澳台及海外电话861058209555"></div>
-			</div>
-		</div>
-    </div>
-</div><!--head end -->
-<!--banner loginbox start -->
-<div class="zc_login_bd">
-    <div class="zc_main">
-        <div class="zc_login_box">
-            <ul class="tabs">
-                <li id="normallogin" class="cur">登录</li>
-                <li id="mobilelogin">手机动态码登录</li>
-                <input id="logintype" value="normal" type="hidden">
-            </ul>
-            <div class="boxremove" style="width:730px;position:relative;">
-	            <div class="tabcontents cur" style="float:left;">
-	            	<div class="zc_l_error" id="error_tips"></div>
-	                <ul>
-	                    <li><label class="icon_wz"><span class="zc-iuser "></span></label>
-	                        <input style="border: 1px solid rgb(250, 190, 0); color: rgb(147, 147, 158);" class="wipt t_val" id="normal_id" maxlength="18" type="text">
-	                        <input class="wipt t_val" id="phone_id" value="请输入注册手机号" maxlength="18" style="display:none" type="text">
-	                    </li>
-	                    <li class="pass_switchover"><label class="icon_wz"><span class="zc-ipsw "></span></label>
-	                        <input class="wipt" value="请输入密码" id="xpasstext" type="text">
-	                        <input class="wipt" value="" id="xpassword" type="password">
-	                    </li>
-	                    <li class="clearfix" id="imageYzmLi" style="display:none">
-	                        <label class="icon_wz"><span class="zc-iyzm"></span></label>
-	                        <span class="fl"><input class="zc-iptsht t_val" id="yzmVal" value="请输入右侧验证码" maxlength="6" type="text"></span>
-	                        <span class="pic-yzm fr"><img id="yzmImg" src="" height="36px" width="108px"><i id="yzmrefresh" class="zc-fresh"></i></span>
-	                    </li>
-	                    <li class="clearfix" id="phoneYzmLi" style="display:none">
-	                        <label class="icon_wz"><span class="zc-idtm"></span></label>
-	                        <span class="fl"><input id="idtmVal" class="zc-iptsht t_val" maxlength="6" value="请输入动态验证码" type="text"></span>
-	                        <span class="fr"><input id="getidtm" class="btn-dtm btn-getdtm" value="获取手机动态码" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','获取手机动态码')" type="button">
-	                        <input id="idtmcount" class="btn-dtm btn-dtmdao" value="60秒后可重发" style="display: none;" type="button"></span>
-	                        <input id="smsOverTime" type="hidden">
-	                    </li>
-	                    <li class="zc_list_che">
-	                        <label class="fl"><span class="zc-blyes"></span><span class="zc_blyes_kong"></span>
-	                        <input id="autoLogin" checked="checked" class="login_checkbox" type="checkbox">30天内自动登录</label>
-	                        <a href="https://passport.zuche.com/member/loginandregist/getpassword.do" class="fr" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','忘记密码')">忘记密码？</a>
-	                        <div class="clear"></div>
-	                    </li>
-	                </ul>
-	                <ul class="login_sub" id="login_sub">
-	                	<li><input class="zc-btn btn-login" value="登录" id="loginBt" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','账户密码登录')" type="submit"></li>
-	                	<li><div class="zc_login_rbox">还不是会员？<a href="https://passport.zuche.com/member/loginandregist/regist.do" rel="nofollow" onclick="dcsMultiTrack('DCS.dcsuri', '/zuchepc.event','WT.mc_click','立即注册')">立即注册</a> </div></li>
-	            	</ul>
-	                <input id="autoLogin" name="autoLogin" type="hidden">
-	            </div>	
-	            <div class="tabcontents cur" id="imgYzmDiv" style="float:left">
-					<div class="zc_l_error" id="error_tips_float"></div>
-	                <ul>
-						<li><i class="zc_blue_yandown"></i> 请先输入以下验证码，获取手机动态码</li>
-	                    <li class="clearfix">
-	                        <label class="icon_wz"><span class="zc-iyzm"></span></label>
-	                        <span class="fl"><input id="yzm_float" class="zc-iptsht t_val" value="输入验证码" maxlength="6" type="text"></span>
-	                        <span class="pic-yzm fr"><img id="yzmImg_float" src="" height="36px" width="108px"><i id="fresh_float" class="zc-fresh"></i></span>
-	                    </li>
-	                </ul>
-					<ul class="login_sub">
-						<li class="pt5"><input class="zc-btn btn-login" value="确认" id="yzmconfirm" type="submit"></li>
-						<li><div class="zc_login_rbox" id="yzmcancel">取消</div></li>
-					</ul>
-	            </div>	       
-       		</div>
-        </div>
-    </div>
-    
-    <!-- 隐藏域 -->
-	<input id="flag" value="" type="hidden">
-	<input id="xuserName" value="" type="hidden">
-    <div class="zc_brand">
-        <div class="zc_main">
-            <ul>
-                <li>
-                    <i class="zc-yecx"></i>
-                    <p><b>100+</b>车型</p>
-                </li>
-                <li>
-                    <i class="zc-yewd"></i>
-                    <p><b>1000+</b>网点</p>
-                </li>
-                <li>
-                    <i class="zc-yecxn"></i>
-                    <p><b>100%</b>车险</p>
-                </li>
-                <li>
-                    <i class="zc-yelc"></i>
-                    <p>无限里程</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!--banner loginbox end -->
-<!--foot start -->
         <a href="{{ URL('/') }}" class="zc_logo" alt="神州租车"></a>
         <div class="zc_phone_bd">
 			<div class="p-re zc_p_h">
@@ -175,7 +73,8 @@
                     @else
                         
                     @endif
-                <form action="{{ URL('login1') }}" method="post">
+                <form action="{{ URL('login') }}" method="post">
+                    <input type='hidden' name='_token' value='{{ csrf_token() }}'>
 	                <ul>
 	                    <li><label class="icon_wz"><span class="zc-iuser "></span></label>
 	                        <input style="border: 1px solid rgb(250, 190, 0); color: rgb(147, 147, 158);" class="wipt t_val" id="normal_id" name='name' value="请输入用户名" maxlength="18" type="text">
